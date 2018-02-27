@@ -1,5 +1,7 @@
 nav-header{
-    border-style: solid;
-    border-color: black;
     text-align: right;
+    padding: 10px;
+    float: right;
+    font-weight: bolder;
+    color: black;
 }
