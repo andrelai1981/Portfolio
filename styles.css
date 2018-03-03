@@ -1,7 +1,16 @@
 /* nav-header{
-    text-align: right;
+    text-align: center;
     padding: 10px;
     float: right;
     font-weight: bolder;
     color: black;
 } */
+
+h3{
+    color:blue;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
