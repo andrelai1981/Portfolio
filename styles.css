@@ -20,3 +20,8 @@ navbar-brand{
     float:left;
     margin-left: 10px;
 }
+
+.container{
+    text-align: center;
+    border-style: solid;
+}
