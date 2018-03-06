@@ -17,10 +17,6 @@ p{
 }
 
 .navbar{
-    float:left;
-    padding-left:  10px;
-    padding-right: 10px;
-    margin-right: 10px;
     border-bottom: solid;
 
 }
@@ -32,4 +28,5 @@ p{
 }
 navbar-brand{
     margin: 10px;
+    float: left;
 }
