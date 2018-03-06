@@ -22,6 +22,7 @@ navbar-brand{
 }
 
 .container{
+    margin-top: 25px;
     text-align: center;
-    border-style: solid;
+    border-bottom: solid;
 }
