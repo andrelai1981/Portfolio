@@ -18,7 +18,8 @@ p{
 
 .navbar{
     float:left;
-    margin-left: 10px;
+    padding-left:  10px;
+    padding-right: 10px;
     border-bottom: solid;
 
 }
