@@ -30,3 +30,6 @@ p{
     text-align: center;
     border-bottom: solid;
 }
+navbar-brand{
+    margin: 10px;
+}
