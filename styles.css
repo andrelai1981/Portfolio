@@ -33,13 +33,28 @@ p{
     border-bottom: solid;
 }
 
-navbar-brand{
+.navbar-brand{
     margin: 10px;
     float: left;
+      }
+.navbar-light .navbar-brand{color:#fff;}
+.navbar-light .navbar-nav .nav-link{color:#fff;}
+.navbar-toggler-icon{background-color:#fff;
 }
+ .navbar-toggler{
+   background-color: #fff;
+ }
+
+.navbar-light .navbar-nav .nav-link.active,
+{color: #fff;}
+
 
 a{
     color:#fff;
+}
+
+a:hover{
+  background-color:#fff;
 }
 
 .header-image{
@@ -57,6 +72,7 @@ a{
     padding: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
+    padding-bottom: 25px;
 }
 
 
@@ -101,3 +117,13 @@ img {
     max-height: 100%;
     max-width: 100%;
 }
+/*
+.footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: right;
+} */
