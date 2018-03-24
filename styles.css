@@ -154,6 +154,11 @@ img {
   text-align: center;
 }
 
+.short-version-li{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .long-version{
   text-align: center;
 }
