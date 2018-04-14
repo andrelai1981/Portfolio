@@ -179,10 +179,17 @@ img {
 
 /* contact form styling */
 
-wufoo-z1c0zfc21ay2zqm{
+#wufoo-z1c0zfc21ay2zqm{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 
+#wuf-adv{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+
+}
 
 }
