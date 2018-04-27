@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Michael Minshew</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,52 +13,68 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-inverse">
     <a class="navbar-brand" href="index.html">Michael's Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="index.html">Home</a>
         <a class="nav-item nav-link" href="projects.html">Projects</a>
         <a class="nav-item nav-link" href="about.html">About</a>
         <a class="nav-item nav-link" href="articles.html">Articles</a>
-        <a class="nav-item nav-link" href="contact.html"><b>Contact</b></a>
+        <a class="nav-item nav-link" href="contact.html">
+          <b>Contact</b>
+        </a>
       </div>
     </div>
   </nav>
 
-  <h3 class="header-text">Contact Me</h3>
+  
 
-<p class="contact-note">To get ahold of me you can email me at michael.minshew @ gmail.com</p>
-
-<!-- form is centering to left while header and footer is centering properly. also the submit button is broken
+  <!-- form is centering to left while header and footer is centering properly. also the submit button is broken
 for some reason. will mess with this later. Note to self, Stop doing this stuff in production. -->
-  <!-- <div id="wufoo-z1c0zfc21ay2zqm">
-  Fill out my <a href="https://theminshew.wufoo.com/forms/z1c0zfc21ay2zqm">online form</a>.
+  <div class = "container">
+    <div class = "row">
+        <h3 style="text-align: center" class="header-text">Contact Me</h3>
+      <div style="width: 50%; margin: 25px auto">
+        <form id = "contact-form" method="POST" action="contact.php" role="form"> 
+            <div class="form-group">
+               <label for = "form_name">Your Name </label>
+               <input class ="form-control" type="text" id="form_name" name="name" class="form-control" placeholder="Your name here">  
+            </div>
+            <div class="form-group">
+              <label for = "form_email">Your E-mail </label>
+              <input class ="form-control"  type="email" id="form_email" name="email" class="form-control" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for = "form_howcanihelp">How can I help? </label>
+              <select class="form-control" id="form_howcanihelp" name = "howcanihelp" placeholder="select one">
+                  <option value="" disabled selected>Select your option</option>
+                  <option value="Website Development">Website Development</option>
+                  <option value="eCommerce Consulting">eCommerce Consulting</option>
+                  <option value="SEO Consulting">SEO Consulting</option>
+                  <option value="Another Exciting Project">Another Exciting Project</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <button>Submit</button>
+            </div>
+          </form>
+      </div>
+    </div>
   </div>
-  <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">The easy to use <a href="http://www.wufoo.com/form-builder/">Wufoo form builder</a> helps you make forms easy, fast, and fun.</div>
-  <script type="text/javascript">var z1c0zfc21ay2zqm;(function(d, t) {
-  var s = d.createElement(t), options = {
-  'userName':'theminshew',
-  'formHash':'z1c0zfc21ay2zqm',
-  'autoResize':true,
-  'height':'469',
-  'async':true,
-  'host':'wufoo.com',
-  'header':'show',
-  'ssl':true};
-  s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-  s.onload = s.onreadystatechange = function() {
-  var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-  try { z1c0zfc21ay2zqm = new WufooForm();z1c0zfc21ay2zqm.initialize(options);z1c0zfc21ay2zqm.display(); } catch (e) {}};
-  var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-  })(document, 'script');</script> -->
 
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="contact.js"></script>
 </body>
 <!-- <div class"footer"><p>@2018 Michael Minshew</p></footer> -->
 
